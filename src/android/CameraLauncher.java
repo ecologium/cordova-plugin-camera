@@ -334,7 +334,7 @@ public class CameraLauncher extends CordovaPlugin implements MediaScannerConnect
         this.imageUri = FileProvider.getUriForFile(cordova.getActivity(),
                 applicationId + ".provider",
                 photo);
-        intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri;
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, imageUri);
         //We can write to this URI, this will hopefully allow us to write files to get to the next step
         intent.addFlags(Intent.FLAG_GRANT_WRITE_URI_PERMISSION);
 
